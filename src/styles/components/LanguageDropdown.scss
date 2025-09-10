@@ -1,0 +1,27 @@
+@use "HeaderButton" as button;
+@use "root" as r;
+
+.LanguageDropdown {
+  @include button.secondary;
+
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+  user-select: none;
+
+  .arrow {
+    display: flex;
+    align-items: center;
+  }
+
+  .arrow svg {
+    transition: r.$transition;
+  }
+
+  .arrow.rotated svg {
+    transform: rotate(180deg);
+  }
+}
+

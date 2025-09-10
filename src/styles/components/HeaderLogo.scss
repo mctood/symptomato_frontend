@@ -1,0 +1,14 @@
+@use "root" as r;
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px;
+  cursor: pointer;
+  transition: r.$transition;
+}
+
+.logo:hover {
+  transform: rotate(15deg);
+}

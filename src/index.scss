@@ -1,0 +1,14 @@
+@import "root";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: $font-size;
+  background: $body-background;
+  color: $text-color;
+  font-family: "Suisse Intl", sans-serif;
+}

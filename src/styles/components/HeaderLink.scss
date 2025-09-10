@@ -1,0 +1,27 @@
+@use "root" as r;
+
+.HeaderLink {
+  font-weight: 600;
+  position: relative;
+  transition: r.$transition;
+  cursor: pointer;
+}
+
+.HeaderLink:hover {
+  color: r.$color-secondary
+}
+
+.HeaderLink::before {
+  position: absolute;
+  width: 0;
+  content: "";
+  height: 1px;
+  background: r.$text-color;
+  bottom: 0;
+  transition: r.$transition;
+}
+
+.HeaderLink:hover::before {
+  width: 100%;
+  background: r.$color-secondary;
+}
